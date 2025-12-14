@@ -1,0 +1,39 @@
+{
+  "name": "codex",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@material-ui/core": "4.11.1",
+    "@material-ui/icons": "4.9.1",
+    "@material-ui/styles": "4.11.1",
+    "axios": "0.21.0",
+    "firebase": "8.1.1",
+    "levenary": "^1.1.1",
+    "netlify-cli": "^2.69.3",
+    "netlify-lambda": "^2.0.1",
+    "react": "17.0.0",
+    "react-ace": "9.2.0",
+    "react-dom": "17.0.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "typescript": "3.8.3"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test --env=jsdom",
+    "eject": "react-scripts eject",
+    "api:start": "cd CodeX-API && PORT=3001 npm start",
+    "api:docker": "cd CodeX-API && docker build --no-cache -t codex-api . && docker run -p 3001:8080 codex-api"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
